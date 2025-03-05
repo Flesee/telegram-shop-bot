@@ -13,8 +13,7 @@ COPY . .
 EXPOSE 8000
 
 # Скрипт для инициализации проекта
-COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+RUN chmod +x /app/entrypoint.sh
 
 # Запуск сервера через entrypoint
-ENTRYPOINT ["/entrypoint.sh"] 
+ENTRYPOINT ["/app/entrypoint.sh"]
