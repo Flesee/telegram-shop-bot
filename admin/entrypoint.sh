@@ -71,4 +71,4 @@ fi
 python manage.py collectstatic --noinput
 
 # Запускаем сервер
-exec gunicorn shopbot_admin.wsgi:application --bind 0.0.0.0:8000 
+exec gunicorn shopbot_admin.wsgi:application --bind 0.0.0.0:8000
