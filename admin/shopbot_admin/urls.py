@@ -12,7 +12,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
-# Добавляем URL-шаблоны для статических и медиа-файлов в режиме отладки
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
+# Добавляем URL-шаблоны для статических и медиа-файлов всегда
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) 
