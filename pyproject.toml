@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "shopbot"
+version = "0.1.0"
+description = "Telegram bot for shop"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "bot"
+] 
